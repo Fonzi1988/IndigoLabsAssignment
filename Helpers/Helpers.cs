@@ -95,9 +95,9 @@ namespace IndigoLabsAssignment.Helpers
         }
 
         /// <summary>
-        /// Get last week active corona cases
+        /// Get last week active COVID-19 cases
         /// </summary>
-        /// <param name="allDays">List of DayData with corona cases</param>
+        /// <param name="allDays">List of DayData with COVID-19 cases</param>
         /// <returns>A list of WeekData for all Slovene regions  </returns>
         public static List<WeekData> GetLastWeekActiveCases(List<DayData> allDays)
         {

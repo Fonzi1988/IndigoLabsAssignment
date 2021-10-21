@@ -33,12 +33,12 @@ namespace IndigoLabsAssignment.Controllers
 
 
         /// <summary>
-        /// Get 
+        /// Get COVID-19 cases for Slovene regions
         /// </summary>
         /// <param name="region">Slovene region to get data for. Possible values (LJ, CE, KR, NM, KK, KP, MB, MS, NG, PO, SG, ZA)</param>
         /// <param name="from">From what date to get data for in format yyyy-MM--dd</param>
         /// <param name="to">To what date to get data for in format yyyy-MM--dd</param>
-        /// <returns>List of daily corona cases (active, vaccinated 1st, vaccinted 2nd, deceased) for Slovene regions </returns>
+        /// <returns>List of daily COVID-19 cases (active, vaccinated 1st, vaccinted 2nd, deceased) for Slovene regions </returns>
         [HttpGet("cases")]
         public async Task<IEnumerable<DayData>> GetCases(string region, string from, string to)
         {
@@ -61,9 +61,9 @@ namespace IndigoLabsAssignment.Controllers
         }
 
         /// <summary>
-        /// Get last weeks active corona cases in Slovenia
+        /// Get last weeks active COVID-19 cases in Slovenia
         /// </summary>
-        /// <returns>Returns the total of active corona cases in the last week for all Slovene regions</returns>
+        /// <returns>Returns the total of active COVID-19 cases in the last week for all Slovene regions</returns>
         [HttpGet("lastweek")]
         public async Task<IEnumerable<WeekData>> GetLastWeek()
         {
