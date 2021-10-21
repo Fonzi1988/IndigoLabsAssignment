@@ -38,10 +38,11 @@ namespace IndigoLabsAssignment.Helpers
                         continue;
                     }
 
-                    //skip data if to date is smaller than date of current line
+                    //skip all data if to date is smaller than date of current line
                     if (to != null && to < day)
                     {
-                        continue;
+                        // use continue if data isn't sorted by date
+                        break;
                     }
 
                     var tempDayData = new DayData(day);
